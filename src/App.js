@@ -6,52 +6,86 @@ import home from '../src/Assets/home.svg';
 import saved from '../src/Assets/bookmark.svg';
 import rocket from '../src/Assets/rocket.svg'; 
 import sendBtn from '../src/Assets/send.svg';
-import userIcon from '../src/Assets/user-icon.png';
+import profileLogo from '../src/Assets/profile logo.png';
 
-const App =()=>{
-  return<>
-       <div className='App'>
-          <div className='sidebar'>
-              <div className='upperSide'>
-                <div className='upperSideTop'><img src={logo} className='logo'/> <span className='brand'> SDLC Platoform</span></div>
-                <button className='midBtn'><img src={addBtn} alt='' className='addBtn'/>New Chat</button>
-                <div className='upperSideBotton'>
-                <button className='query'><img src={msgIcon} alt='' />What is programming ?</button>
-                <button className='query'><img src={msgIcon} alt='' />How to use an API ?</button>
-
-                </div>
-                   
-                
-              </div>
-
-              <div className='lowerSide'>
-                  <div className='listItems'> <img src={home} alt='' className='listitemsImg'/>Home</div>
-                  <div className='listItems'> <img src={saved} alt='' className='listitemsImg'/>Saved</div>
-                  <div className='listItems'> <img src={rocket} alt='' className='listitemsImg'/>Upgrade to Pro</div>
-
-
-              </div>
+const App = () => {
+  return (
+    <>
+      <div className='App'>
+        <div className='sidebar'>
+          <div className='upperSide'>
+            <div className='upperSideTop'>
+              <img src={logo} className='logo' alt='' /> 
+              <span className='brand'> SDLC Platform</span>
+            </div>
+            <button className='midBtn'>
+              <img src={addBtn} alt='' className='addBtn' />New Chat
+            </button>
+            <div className='upperSideBotton'>
+              <button className='query'>
+                <img src={msgIcon} alt='' />What is programming ?
+              </button>
+              <button className='query'>
+                <img src={msgIcon} alt='' />How to use an API ?
+              </button>
+            </div>
           </div>
 
-          <div className='main'>
-              <div className='chats'>
-                  <div className='chat'>
-                    <img src={userIcon} alt=''/> <p className='txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  </div>
-
-                  <div className='chat'>
-                    <img src={logo} alt=''/> <p className='txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry..Lorem Ipsum is simply dummy text of the printing and typesetting industry..Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  </div>
-              </div>
-
-              <div className='chatFooter'>
-                    <div className='inp'>
-                      <input type='text' placeholder='Send a message' name='id'/> <button className='send'><img src={sendBtn} alt=''/></button>
-                    </div>
-              </div>
+          <div className='lowerSide'>
+            <div className='listItems'>
+              <img src={home} alt='' className='listitemsImg' />Home
+            </div>
+            <div className='listItems'>
+              <img src={saved} alt='' className='listitemsImg' />Saved
+            </div>
+            <div className='listItems'>
+              <img src={rocket} alt='' className='listitemsImg' />Upgrade to Pro
+            </div>
           </div>
-       </div>
-  </>
+        </div>
+
+        <div className='main'>
+          <div className='chats'>
+            <div className='chat'>
+              <div className="chatHeader">
+                <img className='chatimg' src={profileLogo} alt='' /> 
+                <p className='txt'>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div className='chat bot'>
+              <div className="chatHeader">
+                <img className='chatimg' src={logo} alt='' /> 
+                <p className='txt'>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='chatFooter'>
+            <div className='inp'>
+              <input type='text' placeholder='Send a message' name='id' /> 
+              <button className='send'>
+                <img src={sendBtn} alt='' />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default App;
