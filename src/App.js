@@ -5,6 +5,8 @@ import msgIcon from '../src/Assets/message.svg';
 import home from '../src/Assets/home.svg';
 import saved from '../src/Assets/bookmark.svg';
 import rocket from '../src/Assets/rocket.svg'; 
+import sendBtn from '../src/Assets/send.svg';
+import userIcon from '../src/Assets/user-icon.png';
 
 const App =()=>{
   return<>
@@ -33,11 +35,19 @@ const App =()=>{
 
           <div className='main'>
               <div className='chats'>
+                  <div className='chat'>
+                    <img src={userIcon} alt=''/> <p className='txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  </div>
 
+                  <div className='chat'>
+                    <img src={logo} alt=''/> <p className='txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry..Lorem Ipsum is simply dummy text of the printing and typesetting industry..Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  </div>
               </div>
 
               <div className='chatFooter'>
-                  
+                    <div className='inp'>
+                      <input type='text' placeholder='Send a message' name='id'/> <button className='send'><img src={sendBtn} alt=''/></button>
+                    </div>
               </div>
           </div>
        </div>
